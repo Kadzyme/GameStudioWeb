@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize.CSS -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>GameStudio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="logo">
+          <span class="logo-game">Game</span><span>Studio</span>
+        </a>
+      </nav>
+      <div class="hero">
+        <h1 class="hero-title">The best games<br />for you</h1>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="section-title">Choose your game</h2>
+        <div class="container">
+          <ul>
+            <li>
+              <article class="game">
+                <img
+                  src="images/Warcraft3Logo.jpg"
+                  alt="Warcraft 3"
+                  class="game-img"
+                />
+                <div class="game-info">
+                  <h3 class="game-title">Warcraft 3</h3>
+                  <p class="game-text">Build base, train units and fight</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="game">
+                <img
+                  src="images/DarkSoulsAvatar.jpg"
+                  alt="Dark Souls"
+                  class="game-img"
+                />
+                <div class="game-info">
+                  <h3 class="game-title">Dark Souls</h3>
+                  <p class="game-text">Try to not die</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="game">
+                <img
+                  src="images/elden-ring-logo.jpg"
+                  alt="Elden Ring"
+                  class="game-img"
+                />
+                <div class="game-info">
+                  <h3 class="game-title">Elden Ring</h3>
+                  <p class="game-text">Fight and win</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Contact information</h2>
+
+        <form class="contact-form">
+          <div class="form-field">
+            <label class="form-label" for="nameInput">Name</label>
+            <input
+              type="text"
+              class="form-input"
+              id="nameInput"
+              placeholder="Enter your Name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="phoneNumberInput"
+              >Phone Number</label
+            >
+            <input
+              type="text"
+              class="form-input"
+              id="phoneNumberInput"
+              placeholder="+38 099 111 11 11"
+              required
+              type="tel"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="emailInput">Email</label>
+            <input
+              type="text"
+              class="form-input"
+              id="emailInput"
+              placeholder="Enter your Email"
+              required
+              type="email"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="commentInput">Comment</label>
+            <textarea
+              type="text"
+              class="form-input"
+              id="commentInput"
+              placeholder="Enter your comment"
+              required
+              type="email"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="btn">Send Form</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
