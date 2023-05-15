@@ -23,11 +23,16 @@ ul {
   border: 1px solid #eeeeee;
   cursor: pointer;
   margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет */
 }
 
 .game:hover .game-title {
   color: #2196f3;
+}
+
+.game:hover {
+  color: #2196f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Горизонтальное смещение, вертикальное смещение, размытие, цвет */
 }
 
 .logo {
@@ -145,6 +150,8 @@ section {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   box-sizing: border-box;
+  resize: vertical;
+  min-width: 100%;
 }
 
 .form-input:focus {
@@ -158,4 +165,52 @@ section {
 }
 
 .btn {
+  padding: 10px 60px;
+  border: none;
+  background-color: #188ce8;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.btn:hover {
+  background-color: #2196f3;
+}
+
+.footer {
+  padding: 60px 15px;
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: white;
+}
+
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-phone,
+.footer-email {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  display: block;
+  text-align: center;
 }
